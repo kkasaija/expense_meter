@@ -1,2 +1,24 @@
-# expense_meter
-A mobile, web based application where you can manage your budget: allows one to register and log in, introduce new transactions associated with a category, and see the money spent on each category.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
