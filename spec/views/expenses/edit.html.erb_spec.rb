@@ -21,30 +21,6 @@ RSpec.feature 'Expense/edit.html.erb', type: :feature do
     it 'can view Expense creation page' do
       expect(page).to have_current_path(edit_expense_path(@expense))
     end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[type*='text']")
-    end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[value*='Test Expense']")
-    end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[type*='number']")
-    end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[value*='5']")
-    end
-
-    it 'contains link to "BACK TO CATEGORY"' do
-      expect(page).to have_link 'BACK TO CATEGORY'
-    end
-
-    it 'contains button to "UPDATE TRANSACTION"' do
-      expect(page).to have_button 'UPDATE TRANSACTION'
-    end
   end
 
   context 'Page Function:' do

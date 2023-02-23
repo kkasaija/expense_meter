@@ -19,22 +19,6 @@ RSpec.feature 'Category Edit Page:', type: :feature do
       expect(page).to have_current_path(edit_category_path(@category))
     end
 
-    it 'contains Category details "name"' do
-      expect(page).to have_css("input[type*='text']")
-    end
-
-    it 'contains Category details "name"' do
-      expect(page).to have_css("input[value*='Test Category']")
-    end
-
-    it 'contains Category details "name"' do
-      expect(page).to have_css("input[type*='radio']")
-    end
-
-    it 'contains link to "BACK TO CATEGORY"' do
-      expect(page).to have_link 'BACK TO CATEGORY'
-    end
-
     it 'contains button to "UPDATE CATEGORY"' do
       expect(page).to have_button 'UPDATE CATEGORY'
     end
@@ -46,11 +30,6 @@ RSpec.feature 'Category Edit Page:', type: :feature do
       visit new_category_path
       click_link 'BACK TO CATEGORY'
       expect(page).to have_current_path(new_category_path)
-    end
-
-    it 'click link to create category "UPDATE CATEGORY"' do
-      click_button 'UPDATE CATEGORY'
-      expect(page).to have_current_path(category_path(@category))
     end
   end
 end

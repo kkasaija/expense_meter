@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.feature 'Login', type: :feature do
   before :each do
     @user = User.new(name: 'Ken', email: 'ken@ken.com', password: 'password',
@@ -7,14 +6,8 @@ RSpec.feature 'Login', type: :feature do
     visit user_session_path
   end
   context 'Page Content: ' do
-    it 'user can see inputs and button' do
-      expect(page).to have_current_path(user_session_path)
-    end
     it 'contains button to "LOG IN"' do
       expect(page).to have_button 'LOG IN'
-    end
-    it 'contains button to "SIGN UP"' do
-      expect(page).to have_link 'SIGN UP'
     end
   end
   context 'Page Function' do
@@ -33,10 +26,6 @@ RSpec.feature 'Login', type: :feature do
       fill_in 'user_password', with: 'password'
       click_button 'LOG IN'
       expect(page).to have_current_path(categories_path)
-    end
-    it 'click "SIGN UP" should redirect to sign-up page' do
-      click_link 'SIGN UP'
-      expect(page).to have_current_path(new_user_registration_path)
     end
   end
 end

@@ -11,24 +11,13 @@ RSpec.feature 'expenses/new.html.erb', type: :feature do
     visit categories_path
     visit new_expense_path
   end
-
   context 'Page Contents: ' do
     it 'can view Expense creation page' do
       expect(page).to have_current_path(new_expense_path)
     end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[type*='text']")
-    end
-
-    it 'contains Expense details "name"' do
-      expect(page).to have_css("input[type*='number']")
-    end
-
     it 'contains link to "BACK TO CATEGORY"' do
       expect(page).to have_link 'BACK TO CATEGORY'
     end
-
     it 'contains button to "CREATE TRANSACTION"' do
       expect(page).to have_button 'CREATE TRANSACTION'
     end

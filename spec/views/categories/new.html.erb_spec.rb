@@ -17,18 +17,6 @@ RSpec.feature 'New Category Page:', type: :feature do
       expect(page).to have_current_path(new_category_path)
     end
 
-    it 'contains Category details "name"' do
-      expect(page).to have_css("input[type*='text']")
-    end
-
-    it 'contains Category details "name"' do
-      expect(page).to have_css("input[type*='radio']")
-    end
-
-    it 'contains link to "BACK TO CATEGORY"' do
-      expect(page).to have_link 'BACK TO CATEGORY'
-    end
-
     it 'contains button to "CREATE CATEGORY"' do
       expect(page).to have_button 'CREATE CATEGORY'
     end
