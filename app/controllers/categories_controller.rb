@@ -34,7 +34,7 @@ class CategoriesController < ApplicationController
     if category.update(category_params)
       redirect_to category, notice: 'Budget category was successfully updated.'
     else
-      flash[:notice] = 'Something went wrong! Budget category was not updated'
+      flash.now[:notice] = 'Something went wrong! Budget category was not updated'
     end
   end
 

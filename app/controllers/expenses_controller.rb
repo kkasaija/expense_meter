@@ -32,7 +32,7 @@ class ExpensesController < ApplicationController
       category = expense_params[:expense_categories][:category_ids][1]
       redirect_to category_path(category), notice: 'Budget expense successfully updated.'
     else
-      flash[:alert] = 'Something went wrong! Budget expense was not updated'
+      flash.now[:alert] = 'Something went wrong! Budget expense was not updated'
       redirect_to edit_expense_path(expense)
     end
   end
