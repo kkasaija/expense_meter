@@ -28,7 +28,7 @@ RSpec.feature 'Category Page:', type: :feature do
     end
 
     it 'contains category icon image' do
-      expect(page).to have_css("img[src*='test_icon.url']")
+      expect(page).to have_css("img[src*='icon.url']")
     end
 
     it 'contains link to "NEW TRANSACTION"' do
