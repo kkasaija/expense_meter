@@ -98,11 +98,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a> 
 
-> Add a link to your deployed project.
 
-- Soon....
+**Walk thru clip** [clip link](https://drive.google.com/file/d/1pzzDw8MJDa-5DeA1Ckkk7n556VVpWSWE/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
