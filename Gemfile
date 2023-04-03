@@ -75,5 +75,6 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem "devise", github: "heartcombo/devise", branch: "ca-turbo"
+gem "responders", "~> 3.1"
