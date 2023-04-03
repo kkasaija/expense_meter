@@ -76,5 +76,5 @@ group :test do
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem "devise", github: "heartcombo/devise", branch: "ca-turbo"
+gem "devise", github: "heartcombo/devise", branch: "main"
 gem "responders", "~> 3.1"
